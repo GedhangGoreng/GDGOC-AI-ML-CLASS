@@ -1,0 +1,7 @@
+list itu dimulai dari uurtan ke 0
+
+
+list 
+append itu buat ganti sebiji aja di dalam list
+extend bisa nambahin lebih dari 1 kedalam list
+remove buat ngapus isi list yang pengen di apus di dalam list

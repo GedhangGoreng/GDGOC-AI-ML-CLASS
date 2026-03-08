@@ -1,0 +1,55 @@
+workflow = serangkaian tahapan membuat ml
+data collecting = sesuai kebutuhan
+exploraty data analusus
+olah data
+latih data biar paham polanya
+test datadeploy biar bisa dipake datanya
+monitoring ngeliat data apakah bagus atau kurang
+
+
+1 data collecting 
+ngambil data supaya bisa melatih modelnya
+sumbernya = survei data scrapping, opensource data (kegle)
+
+2. exploraty data analisis (eda)
+pendekatan untuk menganalisis data intinya mah (kenalan dengan data yang ada)
+kenapa? biar ga rugi karena data yg anomali
+
+general steps =
+mahamin data : ya cuman mahamin ini datanya ngapain sama tugas datanya ngapain
+data loading dan general apalah : pandas (lib) apa tuh, kumpulan fungsi yang tinggal timpa aja 
+df = pd.read.csv (nama file)
+df - data frame = kumpulan data anggeplah tabel excel
+
+intinya cuman cari mean median modus dan quartilan lah 
+
+3 explore data  char
+pake lib numpy, 
+
+ditahap ini mengidentifikasi data yang hilang duplikat dan outliner pake fungsi "replace"
+df_eda.isnull().sum() (gw lupa rumusnya awokaowkoakwo)
+
+df.duplicated().sum() buat nyari duplikat
+
+outlier tuh data anomali co, misal bb manusia normal ada 60 45 334 23 43 nah anomali nya 334 :v
+ngenanganinnya bisa pake z score atau q3-q1 udah gitu aja, cuman caranya gimana gw juga bingung :v
+
+tipe tipe analisis
+visualisasi yang bagus adalah visualisasi yang mudah di baca dan dapat memberikan insight
+
+bi batiate :
+
+data preprosessing = mengubah data mentah yang tidak bisa diolah oleh model menjadi data yang siap pakai dan siap digunakan oleh model ml/analisis
+dat ny abukan angka, biasanya cam[pur ada video, gambar, dll
+
+
+
+
+
+data cleaning
+ngebersihin data yang udah diberesin di no 3 itu ( biasanua dihapus)]
+df.drop_duplicated().sum()
+jika <10% hapus baris
+jika >40% hapus kolom
+atau bisa diisi (khusus data normal per kolom atau baris)
+
