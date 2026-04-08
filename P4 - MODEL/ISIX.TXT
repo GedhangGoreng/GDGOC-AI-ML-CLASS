@@ -1,0 +1,55 @@
+APA ITU ML?
+sebuah model yang mempelajari suatu model tertentu dari data yang kita kasih
+(supervised learning)
+
+intinya ada 
+1. bussines goal (tujuan dari permasalahan)
+2. ML problem framing (mau pake model apa nich) 
+3. data processing (ini mah yang ngerapihin tabel)
+ => jika diatas 25% data kosong maka drop
+ drop kolom identitas
+
+4. model deployment (membuat model ML)
+deploy model ML ke backend Py (FastApi, Flask, Django) biasanya pake FastApi
+
+5 bisa deploy ke cloud (AWS/GCP) => INI TUGAS DEVOPS JIR 
+
+============================================================================================
+JENIS ML
+
+supervised learning (ada jenis yang dibedakan berdasark target variabel)
+=>clasification = berdasarkan objek, jumlah unit valueny akecil (<5) tomat/apel, dll
+
+=> regresion = target variabelnya numerik, suhu banten terkini, objek valuenya gede (>= 10 an)
+unsupervised learning (text mining)
+
+
+
+unsupervised learning = ga ada target variabel 
+biarin aja modelnya belajar sendiri
+
+============================================================================================
+
+supervised learning ngambil keputusannya berbasis klasifikasi
+decision tree = cuman if else doang jir (tree yg targetnya dikit)
+random forest classifier (pohon) = lebih ke arah voting yang udah di selesi
+XGBoost = setiap iterasi if else bakal di terusin ke model berikutnya dan diperbaiki keasalahannya hingga sreg
+SVM = kureng ah 
+KNN = berdasarkan tetangga terdekat a (paling simpel ini co)
+logistic regresion = kureng
+
+
+===============================================================================================
+supervised berbasus regresion  
+linear regresion = kureng, cuman narik rata2 dari data (otomatis)
+decission tree regresor = bedanya ada di targe variabel ( target banyak) hasil akhirnya T/F (ANGKA)
+random forest regresor
+XGBoost regresor 
+
+===============================================================================================
+
+REKOMENDASI DI 2 BIJI ITU = 
+XGBoost
+RANDOM FOREST (TERLALU TINGGI  APANYA TADI TUH :V)
+
+================================================================================================

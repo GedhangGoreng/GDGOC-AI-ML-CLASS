@@ -1,0 +1,40 @@
+1. Tahap Inspeksi (Cek Kondisi Lapangan)
+Sebelum lo "operasi", lo harus tau dulu seberapa parah kondisi pasiennya.
+
+df.head(): Ngintip 5 data teratas.
+
+df.info(): Cek tipe data (ada yang harusnya angka tapi kebaca teks nggak?) dan jumlah data non-null.
+
+df.shape: Cek ukuran total (Baris x Kolom).
+
+2. Handling Duplicates (Buang Sampah Dobel)
+Data kembar itu sampah yang bikin model AI lo jadi "bias" atau nggak akurat.
+
+Ingat: df = df.drop_duplicates(). Tanpa df =, data aslinya nggak bakal berubah.
+
+Logika: Kalau semua kolom isinya sama persis, buang satu, sisain satu.
+
+3. Handling Missing Values (Nambal Lubang)
+Ini yang lo sebut tadi. Data kosong itu musuh utama algoritma.
+
+df.isnull().sum(): Buat scanning kolom mana aja yang ada "bolongnya".
+
+df.dropna(): Cara sadis (hapus baris yang bolong).
+
+df.fillna(nilai): Cara halus (diisi pake rata-rata atau angka tertentu).
+
+
+Shutterstock
+4. Handling Outliers (Data "Penyusup")
+Data yang nilainya terlalu ekstrem (misal: jam belajar 24 jam sehari atau nilai ujian 1000).
+
+Tool: Pake Boxplot buat nemuin titik-titik melayang.
+
+Rumus: Pake IQR (Interquartile Range) buat nentuin batas bawah dan batas atas yang masuk akal.
+
+5. Visualisasi Hubungan (Cek Chemistry)
+Cari tau variabel mana yang paling ngaruh.
+
+Scatter Plot: Buat liat pola (kayak "si lidi" tadi).
+
+Heatmap: Buat liat angka korelasi semua kolom sekaligus.

@@ -1,0 +1,23 @@
+kak raden (external)
+
+kenapa perlu dideploy le?
+untuk menghasilkan bisnis value, kita ga dibayar buat bikin model doang.
+digajinya = modelnya bisa berguna ga?
+bisa digunakan untuk membuat keputusan yang lebih cepat di banding mikir.
+
+===========================================================================
+FRAMEWORK
+GRADIO (cuman buat testing ringan/demo aja, paling gampang)
+FASTAPI ( buat produksi)
+DJANGO (custom)
+
+===========================================================================
+GRADIO
+ini lib py yang paling gampang dipake dan cepet. (buat orang malaz)
+buat demo ML/DL
+komponenya banyak dan siap dipake aja tinggal ganti parameter aja
+
+nyimpen data di pickle dan joblib
+pickle (lambat) buat objek standart, ukuran lebih besar.
+
+joblib (cepat) buat nyimpen ml dll
